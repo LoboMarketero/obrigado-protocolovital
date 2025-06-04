@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! Acesso Liberado - Protocolo Vital 4F</title>
+    <meta name="description" content="Parabéns! Sua compra foi confirmada. Acesse agora sua área exclusiva do Protocolo Intestinal Vital 4F.">
+    
+    <!-- SCRIPT UTMs UTMIFY (PRIMEIRO) -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    
+    <!-- PIXEL UTMIFY (SEGUNDO - contém Facebook) -->
+    <script>
+      window.pixelId = "682ec51f2cd50fbe5ef79f66";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-green: #2E7D32;
+            --secondary-mint: #4CAF50;
+            --accent-blue: #2196F3;
+            --accent-coral: #FF7043;
+            --background-light: #F8F9FA;
+            --text-dark: #2D3748;
+            --text-gray: #4A5568;
+            --text-light: #718096;
+            --border-light: #E2E8F0;
+            --success-green: #48BB78;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-mint) 50%, var(--accent-blue) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary-green), var(--secondary-mint), var(--accent-coral));
+        }
+        
+        .success-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: bounceIn 1s ease-out;
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .main-title {
+            color: var(--primary-green);
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            color: var(--text-gray);
+            font-size: 18px;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+        
+        .success-badge {
+            background: linear-gradient(135deg, var(--success-green), var(--secondary-mint));
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 32px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+        }
+        
+        .access-card {
+            background: var(--background-light);
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            text-align: left;
+        }
+        
+        .access-title {
+            color: var(--primary-green);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .credential-group {
+            margin-bottom: 24px;
+        }
+        
+        .credential-label {
+            display: block;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .credential-value {
+            background: white;
+            border: 2px solid var(--border-light);
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 16px;
+            color: var(--text-dark);
+            border-left: 4px solid var(--secondary-mint);
+            word-break: break-all;
+        }
+        
+        .password-container {
+            position: relative;
+        }
+        
+        .password-value {
+            background: white;
+            border: 2px solid var(--border-light);
+            border-radius: 8px;
+            padding: 16px 50px 16px 16px;
+            font-size: 18px;
+            color: var(--text-dark);
+            border-left: 4px solid var(--accent-coral);
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent-coral);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .copy-btn:hover {
+            background: #FF5722;
+            transform: translateY(-50%) scale(1.05);
+        }
+        
+        .copy-btn.copied {
+            background: var(--success-green);
+        }
+        
+        .password-note {
+            background: #FFF3E0;
+            border: 1px solid #FFB74D;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #E65100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .security-tips {
+            background: #F0F8FF;
+            border: 1px solid #90CAF9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        
+        .security-title {
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .security-list {
+            text-align: left;
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+        
+        .security-list li {
+            margin-bottom: 8px;
+            padding-left: 8px;
+        }
+        
+        .access-button {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-mint));
+            color: white;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 24px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .access-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.4);
+        }
+        
+        .support-section {
+            background: var(--background-light);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+        }
+        
+        .support-title {
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .support-text {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .logo-section {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-light);
+        }
+        
+        .footer-logo {
+            max-width: 200px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-logo:hover {
+            opacity: 1;
+        }
+        
+        .footer-note {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-light);
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px;
+                margin: 10px;
+            }
+            
+            .main-title {
+                font-size: 28px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+            
+            .access-card {
+                padding: 24px;
+            }
+            
+            .footer-logo {
+                max-width: 150px;
+            }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3); }
+            50% { box-shadow: 0 6px 20px rgba(46, 125, 50, 0.6); }
+            100% { box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">🎉</div>
+        
+        <h1 class="main-title">Parabéns!</h1>
+        <p class="subtitle">Sua compra foi confirmada com sucesso</p>
+        
+        <div class="success-badge">
+            ✅ Acesso Liberado ao Protocolo Vital 4F
+        </div>
+        
+        <div class="access-card">
+            <h2 class="access-title">
+                🔐 Dados de Acesso à Sua Área Exclusiva
+            </h2>
+            
+            <div class="credential-group">
+                <label class="credential-label">📧 Email de Acesso</label>
+                <div class="credential-value" id="userEmail">
+                    Use o mesmo email com que você realizou a compra
+                </div>
+            </div>
+            
+            <div class="credential-group">
+                <label class="credential-label">🔑 Senha de Acesso</label>
+                <div class="password-container">
+                    <div class="password-value" id="passwordValue">Vital2025!</div>
+                    <button class="copy-btn" onclick="copyPassword()" id="copyBtn">Copiar</button>
+                </div>
+                <div class="password-note">
+                    ⚠️ <strong>Importante:</strong> A senha inclui o símbolo de exclamação (!) no final. Copie exatamente como mostrado acima.
+                </div>
+            </div>
+            
+            <div class="security-tips">
+                <div class="security-title">
+                    🛡️ Dicas de Segurança
+                </div>
+                <ul class="security-list">
+                    <li>✅ Guarde estes dados em local seguro</li>
+                    <li>✅ Use o botão "Copiar" para evitar erros de digitação</li>
+                    <li>✅ Não compartilhe sua senha com terceiros</li>
+                    <li>✅ Acesse sempre pelo link oficial abaixo</li>
+                </ul>
+            </div>
+            
+            <a href="https://app.protocolovital4f.online/" 
+               class="access-button pulse" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                🚀 Acessar Minha Área Exclusiva
+            </a>
+        </div>
+        
+        <div class="support-section">
+            <h3 class="support-title">📞 Precisa de Ajuda?</h3>
+            <p class="support-text">
+                Se você tiver qualquer dificuldade para acessar sua conta ou precisar de suporte técnico, nossa equipe está pronta para ajudar.
+            </p>
+            <p class="support-text">
+                <strong>Lembre-se:</strong> Use exatamente o email da sua compra e a senha <code>Vital2025!</code> (com exclamação no final).
+            </p>
+        </div>
+        
+        <div class="footer-note">
+            🌟 Bem-vindo(a) à sua jornada de transformação com o Protocolo Intestinal Vital 4F!<br>
+            Sua experiência premium começa agora.
+        </div>
+        
+        <div class="logo-section">
+            <img src="https://i.postimg.cc/RCWS8tMC/piv4f-logo-1.png" 
+                 alt="Protocolo Intestinal Vital 4F" 
+                 class="footer-logo">
+        </div>
+    </div>
+
+    <script>
+        function copyPassword() {
+            const password = "Vital2025!";
+            const copyBtn = document.getElementById('copyBtn');
+            
+            // Usar a API moderna do clipboard
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(password).then(() => {
+                    showCopySuccess();
+                }).catch(err => {
+                    fallbackCopyTextToClipboard(password);
+                });
+            } else {
+                // Fallback para navegadores mais antigos
+                fallbackCopyTextToClipboard(password);
+            }
+        }
+        
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+            textArea.style.opacity = "0";
+            
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showCopySuccess();
+            } catch (err) {
+                console.error('Fallback: Could not copy text: ', err);
+                alert('Erro ao copiar. Por favor, copie manualmente: Vital2025!');
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        function showCopySuccess() {
+            const copyBtn = document.getElementById('copyBtn');
+            const originalText = copyBtn.textContent;
+            
+            copyBtn.textContent = '✓ Copiado!';
+            copyBtn.classList.add('copied');
+            
+            setTimeout(() => {
+                copyBtn.textContent = originalText;
+                copyBtn.classList.remove('copied');
+            }, 2000);
+        }
+        
+        // Detectar email da URL se possível (para usuários vindos de links personalizados)
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const email = urlParams.get('email');
+            
+            if (email) {
+                document.getElementById('userEmail').textContent = email;
+            }
+        });
+        
+        // Adicionar animação de entrada
+        window.addEventListener('load', function() {
+            document.querySelector('.container').style.animation = 'fadeInUp 0.8s ease-out';
+        });
+    </script>
+    
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body>
+</html>
