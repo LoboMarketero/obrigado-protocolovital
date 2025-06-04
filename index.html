@@ -164,8 +164,10 @@
             font-size: 15px;
             color: var(--text-dark);
             border-left: 4px solid var(--secondary-mint);
-            word-break: break-all;
+            word-break: break-word;
             line-height: 1.4;
+            text-align: center;
+            font-weight: 500;
         }
         
         .password-container {
@@ -417,12 +419,17 @@
             
             .credential-value {
                 padding: 12px;
-                font-size: 14px;
+                font-size: 13px;
+                line-height: 1.3;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                text-align: center;
             }
             
             .password-value {
                 padding: 12px 40px 12px 12px;
                 font-size: 15px;
+                line-height: 1.3;
             }
             
             .copy-btn {
@@ -433,10 +440,11 @@
             
             .access-button {
                 padding: 14px 24px;
-                font-size: 14px;
+                font-size: 13px;
                 margin: 16px 0;
                 width: 100%;
                 max-width: none;
+                line-height: 1.2;
             }
             
             .security-tips {
@@ -549,7 +557,7 @@
             <div class="credential-group">
                 <label class="credential-label">📧 Email de Acesso</label>
                 <div class="credential-value" id="userEmail">
-                    Use o mesmo email com que você realizou a compra
+                    Utilize o email da sua compra
                 </div>
             </div>
             
@@ -580,7 +588,7 @@
                class="access-button pulse" 
                target="_blank" 
                rel="noopener noreferrer">
-                🚀 Acessar Minha Área Exclusiva
+                🚀 Acessar Área Exclusiva
             </a>
         </div>
         
