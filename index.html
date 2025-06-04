@@ -52,16 +52,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
             line-height: 1.6;
+            margin: 0;
         }
         
         .container {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 16px;
+            padding: 20px;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
+            max-width: 100%;
             width: 100%;
             text-align: center;
             position: relative;
@@ -93,7 +94,7 @@
         
         .main-title {
             color: var(--primary-green);
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             margin-bottom: 12px;
             letter-spacing: -0.5px;
@@ -101,46 +102,48 @@
         
         .subtitle {
             color: var(--text-gray);
-            font-size: 18px;
-            margin-bottom: 32px;
+            font-size: 16px;
+            margin-bottom: 24px;
             font-weight: 400;
         }
         
         .success-badge {
             background: linear-gradient(135deg, var(--success-green), var(--secondary-mint));
             color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
+            padding: 10px 20px;
+            border-radius: 20px;
             display: inline-block;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+            line-height: 1.4;
         }
         
         .access-card {
             background: var(--background-light);
             border: 2px solid var(--border-light);
-            border-radius: 16px;
-            padding: 32px;
-            margin: 32px 0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
             text-align: left;
         }
         
         .access-title {
             color: var(--primary-green);
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
+            flex-wrap: wrap;
         }
         
         .credential-group {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
         
         .credential-label {
@@ -148,7 +151,7 @@
             color: var(--text-dark);
             font-weight: 600;
             margin-bottom: 8px;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -157,11 +160,12 @@
             background: white;
             border: 2px solid var(--border-light);
             border-radius: 8px;
-            padding: 16px;
-            font-size: 16px;
+            padding: 14px;
+            font-size: 15px;
             color: var(--text-dark);
             border-left: 4px solid var(--secondary-mint);
             word-break: break-all;
+            line-height: 1.4;
         }
         
         .password-container {
@@ -273,30 +277,80 @@
         .support-section {
             background: var(--background-light);
             border-radius: 12px;
-            padding: 24px;
-            margin-top: 32px;
+            padding: 20px;
+            margin-top: 24px;
         }
         
         .support-title {
             color: var(--text-dark);
             font-weight: 600;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            font-size: 16px;
         }
         
         .support-text {
             color: var(--text-gray);
             font-size: 14px;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .security-tips {
+            background: #F0F8FF;
+            border: 1px solid #90CAF9;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .security-title {
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+        }
+        
+        .security-list {
+            text-align: left;
+            color: var(--text-gray);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .password-note {
+            background: #FFF3E0;
+            border: 1px solid #FFB74D;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+            font-size: 13px;
+            color: #E65100;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.4;
+        }
+        
+        .footer-note {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-light);
+            line-height: 1.5;
         }
         
         .logo-section {
-            margin-top: 40px;
-            padding-top: 32px;
+            margin-top: 24px;
+            padding-top: 20px;
             border-top: 1px solid var(--border-light);
         }
         
         .footer-logo {
-            max-width: 200px;
+            max-width: 180px;
             height: auto;
             opacity: 0.8;
             transition: opacity 0.3s ease;
@@ -315,25 +369,153 @@
         }
         
         @media (max-width: 640px) {
+            body {
+                padding: 5px;
+            }
+            
             .container {
-                padding: 24px;
-                margin: 10px;
+                padding: 16px;
+                margin: 5px;
+                border-radius: 12px;
+            }
+            
+            .success-icon {
+                font-size: 48px;
+                margin-bottom: 16px;
             }
             
             .main-title {
-                font-size: 28px;
+                font-size: 24px;
+                margin-bottom: 8px;
             }
             
             .subtitle {
-                font-size: 16px;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .success-badge {
+                font-size: 13px;
+                padding: 8px 16px;
+                margin-bottom: 20px;
             }
             
             .access-card {
-                padding: 24px;
+                padding: 16px;
+                margin: 16px 0;
+            }
+            
+            .access-title {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            
+            .credential-label {
+                font-size: 12px;
+                margin-bottom: 6px;
+            }
+            
+            .credential-value {
+                padding: 12px;
+                font-size: 14px;
+            }
+            
+            .password-value {
+                padding: 12px 40px 12px 12px;
+                font-size: 15px;
+            }
+            
+            .copy-btn {
+                padding: 5px 8px;
+                font-size: 10px;
+                right: 5px;
+            }
+            
+            .access-button {
+                padding: 14px 24px;
+                font-size: 14px;
+                margin: 16px 0;
+                width: 100%;
+                max-width: none;
+            }
+            
+            .security-tips {
+                padding: 12px;
+                margin: 16px 0;
+            }
+            
+            .security-title {
+                font-size: 14px;
+            }
+            
+            .security-list {
+                font-size: 12px;
+            }
+            
+            .support-section {
+                padding: 16px;
+                margin-top: 20px;
+            }
+            
+            .support-title {
+                font-size: 15px;
+            }
+            
+            .support-text {
+                font-size: 13px;
+            }
+            
+            .password-note {
+                font-size: 12px;
+                padding: 10px;
+            }
+            
+            .footer-note {
+                font-size: 13px;
+                margin-top: 20px;
+                padding-top: 16px;
             }
             
             .footer-logo {
                 max-width: 150px;
+            }
+            
+            .logo-section {
+                margin-top: 20px;
+                padding-top: 16px;
+            }
+        }
+        
+        @media (min-width: 641px) {
+            .container {
+                max-width: 600px;
+                padding: 32px;
+                border-radius: 20px;
+            }
+            
+            .main-title {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+                margin-bottom: 32px;
+            }
+            
+            .success-badge {
+                font-size: 16px;
+                padding: 12px 24px;
+                margin-bottom: 32px;
+            }
+            
+            .access-card {
+                padding: 32px;
+                margin: 32px 0;
+            }
+            
+            .access-title {
+                font-size: 20px;
+                margin-bottom: 20px;
             }
         }
         
